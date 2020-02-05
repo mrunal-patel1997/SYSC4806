@@ -1,3 +1,5 @@
+package Spring;
+
 import Spring.AddressBook;
 import Spring.BuddyInfo;
 import org.junit.After;

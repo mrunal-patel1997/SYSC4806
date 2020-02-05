@@ -24,11 +24,10 @@ public class SpringMain extends AddressBookController{
     }
 
     @Bean
-    public CommandLineRunner demo (AddressBookRepository repository){
+    public CommandLineRunner demo (AddressBookRepository repository, BuddyInfoRepository repo){
         return args -> {
             repository.save(new AddressBook());
-
-            //repository.save(new BuddyInfo("test", "address", "num"));
+            repo.save(new BuddyInfo("test", "address", "num"));
             //repository.save(new )
 
         };
