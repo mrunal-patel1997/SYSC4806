@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+        "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+    <bean id="BuddyFrame" class="Spring.AddressBook">
+        <property name="Address">
+            <value>Address Book</value>
+        </property>
+    </bean>
+    <bean id="SpringFrame" class= "Spring.AddressBookGui">
+        <property name= "Controller">
+            <list>
+                <ref bean="itemScrollPane"/>
+            </list>
+        </property>
+    </bean>
+    <bean id="itemScrollPane" class="javax.swing.JScrollPane">
+    </bean>
+
+</beans>
